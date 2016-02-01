@@ -1,26 +1,15 @@
 ---
+title: "Photo relation from Chile"
 layout: default
 ---
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-		  {% for image in post.images %}
-		  	{{ image.name }} <br />
-		  {% endfor %}
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+{% for post in site.posts offset: 0 limit: 50 %}	
+<div class="post" id="post-<?php the_ID(); ?>">
+	<div class="postTitle" ><h2>
+		{% include title.md post=post %}
+	</h2></div>
+	<!-- TODO: add showing images inline -->
+		<div class="entry">
+			{% include gallery.md page=post separate_galleries='true' %}
+		</div>
 </div>
+{% endfor %}	
