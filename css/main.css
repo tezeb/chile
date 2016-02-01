@@ -12,17 +12,6 @@ body {
 #content {
 	overflow: auto;
 }
-#rightColumn {
-    width: 220px;
-    float: right;
-	margin-top: 90px;
-}
-#leftColumn {
-    width: 760px;
-    float: left;
-    padding: 10px;
-}
-
 .postTitle {
     border: 1px solid #900;
     border-style: none none solid;
@@ -40,22 +29,8 @@ body {
 .postTitle h2 {
     margin: 10px 0;
 }
-.post small {
-    padding-top: 6px;
-}
-.postTitle small {
-    color: #CCC;
-}
-small {
-    font-size: 12px;
-}
-#rightColumn a {
-    text-decoration: none;
-    color: #777777;
-}
 .post a:hover {
-    background-color: #000000;
-    color: #FFFFFF;
+	text-decoration: underline;
 }
 #page {
     background-color: white;
@@ -63,12 +38,20 @@ small {
     padding: 0;
     width: 1000px;
 }
+.post .entry a {
+	display: inline-block;
+	vertical-align: middle;
+	width: 20%;
+}
 .post .entry img {
     background-color: #FFFFFF;
     border: 1px solid #ced4ca;
     padding: 3px;
     margin: 5px 0 5px 0;
     float: none;
+}
+.post .entry a:hover img {
+    background-color: #666;
 }
 .post .entry {
     padding: 0 50px 5px;
@@ -90,55 +73,26 @@ small {
 #header .description {
     display: inline
 }
-#rightColumn a,
 .navigation a {
     font-size: small;
     text-decoration: none;
 }
-#rightColumn a:link,
 .navigation a:link {
     color: #900;
-}
-#rightColumn a:visited {
-    color: #777;
 }
 .navigation a:visited {
     color: #CCC;
 }
-#rightColumn a:hover,
-.navigation a:hover {
-    color: #CCC;
-    background-color: #000;
-}
+.navigation a:hover,
 .navigation a:active {
-    color: #900;
+    text-decoration: underline;
 }
 .post {
     text-align: justify;
-}
-.singlePost a {
-    text-decoration: none;
-    color: #999999;
-}
-.singlePost {
-    font-size: 12px;
-    clear: left;
-    text-align: left;
-    margin: 0;
-    color: #777;
 }
 .alignleft {
     float: left;
 }
 .alignright {
     float: right;
-}
-/*	code highlight table */
-.highlighttable {
-    border: solid #000 1px;
-    min-width: 600px;
-    background-color: #eee;
-    tab-size: 4;
-    -moz-tab-size: 4;
-    -o-tab-size: 4;
 }
