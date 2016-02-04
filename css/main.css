@@ -47,8 +47,9 @@ body {
     background-color: #FFFFFF;
     border: 1px solid #ced4ca;
     padding: 3px;
-    margin: 5px 0 5px 0;
+    margin: 5px auto;
     float: none;
+	display: block;
 }
 .post .entry a:hover img {
     background-color: #666;
