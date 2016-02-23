@@ -8,7 +8,8 @@
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <script src="/js/jquery-1.10.2.min.js"></script>
-  <script src="/js/lightbox-2.6.min.js"></script>
-  <link href="/css/lightbox.css" rel="stylesheet" />
+  <script src="/js/lightgallery.min.js"></script>
+  <link href="/css/lightgallery.min.css" rel="stylesheet" />
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 </head>

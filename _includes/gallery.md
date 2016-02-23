@@ -3,8 +3,8 @@
 {% else %}
 {% assign post = page %}
 {% endif %}
-<div class="row">{% for image in post.images %}<!--
+{% for image in post.images %}<!--
 -->{% if include.image == null or include.image == image.name %}<!--
---><a href="{{ post.imgfolder }}/{{ image.name }}" data-lightbox="0" title="{{ image.text }}"><!--
---><img src="{{ post.imgfolder }}/t_{{ image.name }}" title="{{ image.text }}"></a><!--
--->{% endif %}{% endfor %}</div>
+--><a href="{{ post.imgfolder }}/{{ image.name }}" data-sub-html="{{ image.text }}" class="single_img" ><!--
+--><img src="{{ post.imgfolder }}/t_{{ image.name }}" data-sub-html="{{ image.text }}"></a><!--
+-->{% endif %}{% endfor %}
